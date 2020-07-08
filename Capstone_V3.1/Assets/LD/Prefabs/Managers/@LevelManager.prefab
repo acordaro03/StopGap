@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000013924805404}
+  m_IsPrefabParent: 1
+--- !u!1 &1000013924805404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4000013462757086}
+  - component: {fileID: 114000012210347052}
+  - component: {fileID: 114000011377116336}
+  - component: {fileID: 114089831826577426}
+  m_Layer: 0
+  m_Name: '@LevelManager'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000013462757086
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013924805404}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114000011377116336
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013924805404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dc05d0573fed4846b20fc89deb8f1c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114000012210347052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013924805404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707579604f0230d43a6974ce76b7aafd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnTime: 2
+  cameraWhileDead: {fileID: 0}
+  sfx_respawn: {fileID: 8300000, guid: 1bbcb8405c44b1c40bf4252a4d9dc506, type: 3}
+  sfx_lose: {fileID: 8300000, guid: 60d7e7268e9c2db4e97b94d7e1f7b9c6, type: 3}
+  sfx_win: {fileID: 8300000, guid: 56889f7aa039d7f45abdd2ad9ec9e26f, type: 3}
+--- !u!114 &114089831826577426
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013924805404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 277836e9a0829b642b642bf1f794d025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  mainCamera: {fileID: 0}
+  infiniteLives: 0
+  maxLives: 3
+  startingLives: 3
+  maxHealth: 10
+  currentHealth: 10
+  hitInvulnerableTime: 0.2
+  localPlayerData:
+    sceneID: 0
+    smallCollectibles: 0
+    largeCollectibles: 0
+    keys: 0
+    lives: 0
+    playerStartX: 0
+    playerStartY: 0
+    playerStartZ: 0
+    cameraStartX: 0
+    cameraStartY: 0
+    cameraStartZ: 0
+  unSavedCollectList: []
+  sfx_damagePlayer: {fileID: 8300000, guid: e12beff0e487227418030e430d7b53f9, type: 3}
+  isInvulnerable: 0
